@@ -1,0 +1,302 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-family: 'Noto Sans KR', sans-serif;
+   
+}
+
+/* --------header 부분---------- */
+header{
+   background: url('./images/헤더배경.png') no-repeat;
+   width: 100%;
+   height: 840px;
+   z-index: 90;
+   position: relative;
+
+}
+
+#CI_wrapper{
+  
+   width: 1400px;
+   margin: 0 auto;
+   padding-top: 25px;
+}
+
+
+.banner_wrapper{
+   width: 1400px;
+   margin: 0 auto;
+   position: relative;
+}
+.banner_text_wrapper{
+   padding-top: 15%;
+   color: #DDDD;
+}
+
+
+.banner_text_wrapper .banner_text_title{
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 35px;
+  line-height: 60px;
+}
+
+.banner_text_con{
+   font-weight: 500;
+   line-height: 20px;
+}
+
+.banner_img_wrapper{
+   position: absolute;
+   right: 0;
+   top: 9%;
+}
+
+/* ----container--------- */
+/* #container{
+   
+} */
+
+
+/* -------기업소개(큰로고)--------- */
+.box_wrapper{
+   background: #04088a;
+   height: 300px;
+   overflow: hidden;
+}
+.CI_Big{
+   position: relative;
+   height: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.CI_Big img{
+   position: absolute;
+   bottom: 0;
+}
+
+/* -------기업목록(고객기업)--------- */
+.client_img_wrapper{
+   text-align: center;
+   max-width: 1400px;
+   margin: 150px auto;
+}
+
+
+.client_img_wrapper ul{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.client_img_wrapper ul li{
+   color: #a3a3a3;
+   font-size: 18px;
+   width: calc(100% / 9);
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.client_CI_wrap{
+   width: 120px;
+    position: relative;
+    height: 120px;
+    border: 3px solid #dddddd;
+    border-radius: 50%;
+}
+
+.client_CI_wrap img{
+   max-width: 100%;
+   padding: 20px;
+   margin-bottom: 5px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.client_img_wrapper ul li p{
+   font-size: 16px;
+   padding-top: 15px;
+}
+
+.button i{
+   color: #04088a;
+   display: none;
+}
+
+@media (max-width:640px) {
+   .footer_wrapper{
+      padding: 40px;
+      flex-direction: column;
+   }
+
+   .footer_wrapper .img_wrapper{
+      text-align: center;
+      margin-bottom: 20px;
+   }
+
+   .footer_wrapper .img_wrapper img{
+      width: 40%;
+      float: none;
+   }
+
+   .footer_contents .footer_con_title{
+      font-size: 16px;
+   }
+
+   .footer_info p{
+      font-size: 14px;
+   }
+}
+
+
+@media  (max-width:940px) {
+
+   /* 기업목록(고객사) */
+   .box_wrapper{
+      text-align: center;
+   }
+   .CI_Big img{
+      width: 60%;
+      position: unset;
+      margin: 100px 0;
+   }
+
+   .client_img_wrapper{
+      margin: 130px auto;
+   }
+   .client_img_wrapper ul{
+      max-width: 500px;
+      margin: 0 auto;
+   }
+
+   .client_img_wrapper ul li{
+      width: calc(100% / 4 - 6%);
+      margin: 0 3% 30px 3%;
+   }
+   
+   .client_CI_wrap{
+      width: 110px;
+      height: 110px;
+   }
+
+   .button i{
+      font-size: 70px;
+      display: initial;
+   }
+
+   /* footer */
+
+   .footer_wrapper .img_wrapper{
+      margin-left: 0px;
+   }
+
+   .footer_info_wrapper{
+      font-size: 14px;
+   }
+
+   .footer_info{
+      flex-direction: column;
+   }
+
+   .footer_contents .footer_con_title{
+      font-size: 16px;
+   }
+
+   .footer_info p{
+      font-size: 14px;
+   }
+}
+
+
+
+@media  (min-width:941px) and (max-width:1217px) {
+
+    /* 기업목록(고객사) */
+   .CI_Big{
+      padding-left: 5%;
+   }
+   .CI_Big img{
+      width: 50%;
+   }
+
+   .client_img_wrapper ul{
+      margin: 0 5%;
+   }
+
+   .client_img_wrapper ul li{
+      width: calc(100% / 8);
+   }
+
+   .client_CI_wrap{
+      width: 10vw;
+      height: 10vw;
+   }
+   
+   .button i{
+      font-size: 70px;
+      display: initial;
+   }
+   .footer_wrapper .img_wrapper{
+      margin-left: 0px;
+   }
+}
+
+/* ------------footer 부분------------ */
+.footer_wrapper{
+   background: url('./images/footer2.png') no-repeat;
+   display: flex;
+   padding: 80px 50px;
+   width: 100%;
+   margin: 0 auto;
+   background-size: cover;
+}
+
+.img_wrapper{
+   margin-left: 250px;
+}
+
+.footer_contents{
+   margin-left: 5%;
+   width: 85%;
+   display: inline-block;
+}
+
+.footer_con_title{
+   color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.footer_info_wrapper{
+   color: #b9b9b9;
+   line-height: 25px;
+}
+
+.footer_info{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer_info p{
+   margin: 0 !important;
+   width: calc(100% / 2);
+   display: block;
+}
+
+.footer_info p:nth-of-type(5){width: 100%;}
+
+pre{
+   display: block;
+}
+
+.copyright{
+   color: #828282;
+}
+

@@ -1,5 +1,5 @@
 
-let clientsImg = document.querySelectorAll("ul li");
+let clientsImg = document.querySelectorAll(".client_CI");
 let clientImgWrap = document.querySelector("ul");
 
 const clientsImagesClass = () => {
@@ -15,7 +15,7 @@ const clientsImagesClass = () => {
       if (i < 9) {
          setTimeout(function () {
             clientsImg[i].style.opacity = 1;
-         }, i * 500)
+         }, i * 200)
       } else if (i >= 9 && i < 18) {
          let j = i + v;
          let e = 26;
@@ -24,12 +24,12 @@ const clientsImagesClass = () => {
             clientsImg[j].style.opacity = 1;
             // i=i+1;
 
-         }, (e - j) * 500)
+         }, (e - j) * 200)
 
       } else if(i>=18) {
             setTimeout(function () {
                clientsImg[i].style.opacity = 1;
-            }, i * 500)
+            }, i * 200)
          }
        
       }

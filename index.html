@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,8 @@
    <title>Resoft</title>
    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> -->
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
+   <script src="./WOW-master/dist/wow.min.js"></script>
 </head>
 
 <body>
@@ -33,11 +34,9 @@
       </div>
    </header>
    <div id="container">
-
-
       <div class="box_wrapper">
          <div class="CI_Big">
-            <img src="./images/리소프트로고_big.png" alt="">
+            <img src="./images/리소프트로고_big.png" alt="" class="wow fadeInDown" data-wow-delay="0.3s">
          </div>
       </div>
       <div class="client_img_wrapper">
@@ -237,9 +236,11 @@
          </div>
       </div>
    </footer>
-
-
-   <script src="index.js"></script>
+   <script>
+      new WOW().init();
+   </script>
+  
+   <script defer src="index.js"></script>
 </body>
 
 </html>

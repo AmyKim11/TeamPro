@@ -16,6 +16,8 @@ header{
    height: 840px;
    z-index: 90;
    position: relative;
+   background-size: cover;
+   background-repeat: round;
 }
 
 #CI_wrapper{
@@ -61,9 +63,9 @@ header{
    top: 9%;
 }
 
-.banner_img_wrapper img{
+/* .banner_img_wrapper img{
    width: 100%;
-}
+} */
 
 /* ----container--------- */
 /* #container{
@@ -213,6 +215,7 @@ header{
       width: 500px;
    }
 
+ 
 
    /* 기업목록(고객사) */
    .box_wrapper{
@@ -274,7 +277,13 @@ header{
 
 @media  (min-width:941px) and (max-width:1217px) {
 
-  
+   .banner_img_wrapper{
+      right: 3%;
+   }
+
+   .banner_img_wrapper img{
+      width: 580px;
+   }
     /* 기업목록(고객사) */
    .CI_Big{
       padding-left: 5%;
@@ -295,6 +304,7 @@ header{
       width: 10vw;
       height: 10vw;
    }
+   
    
    .button i{
       font-size: 70px;
@@ -357,3 +367,7 @@ pre{
    color: #828282;
 }
 
+
+.noshow{
+   display: none;
+}

@@ -47,7 +47,7 @@ function  clientsImagesClass () {
    function width1217(){
          
    let v = 7;
-   for (let i = 0; i < clientsImg.length; i++) {
+   for (let i = 0; i < clientsImg.length-3; i++) {
       if (i < 8) {
          setTimeout(function () {
             clientsImg[i].style.opacity = 1;
@@ -82,20 +82,21 @@ function  clientsImagesClass () {
    }
    // clientsImagesClass();
    // clearTimeout(clientsImagesClass, width1217, width940);
-   // let startAni = true;
+   let startAni = true;
    let $BLOCK = 'block';
    let NONE =  'none';
    let sNum1 = [24, 27];
    let sNum2 = [12, 27];   
    const clientListAni = ()=> {
     
-      if(window.innerWidth > 1218){
+      if(window.innerWidth > 1218 ){
          clientsImagesClass();
          startAni = false;
       } else if(window.innerWidth >= 941 && window.innerWidth <= 1218){
          width1217(); 
          startAni = false;
          buttonClickWidth1218(NONE, sNum1[0], sNum1[1]);
+         // width940();
       
       } else if(window.innerWidth < 941){
          width940();
@@ -110,7 +111,9 @@ function  clientsImagesClass () {
   
   
    clientListAni();
-
+   if( clientsImg[26].style.opacity== 1 ){
+      plusButton.classList.add('noshow');
+   }
    
 
    function buttonClickWidth1218(BLOCK, num1, num2) {
@@ -120,14 +123,26 @@ function  clientsImagesClass () {
       for(let s = 0; s < sliceArray.length;s++){
       sliceArray[s].style.display = BLOCK;
     }
+  
    }
 
    const clickButtonEvent = () => {
       buttonClickWidth1218($BLOCK);
+      let e =1;
+      for(let v = 24;v<clientsImg.length;v++){
+         e++;
+         setTimeout(function () {
+            clientsImg[v].style.opacity = 1;
+         }, e * 200)
+      }
       plusButton.classList.add('noshow');
+    
    }
+
    // console.log(buttonClickWidth1218);
    plusButton.addEventListener("click", clickButtonEvent);
+   // window.addEventListener("resize", clientListAni);
+   // plusButton.removeEventListener("click", clickButtonEvent);
    window.clearTimeout(clientListAni);
    
 

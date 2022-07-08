@@ -111,8 +111,8 @@ function  clientsImagesClass () {
   
   
    clientListAni();
-   if( clientsImg[26].style.opacity== 1 ){
-      plusButton.classList.add('noshow');
+   if( clientsImg[26].style.opacity === 1 ){
+      plusButton.style.display = 'none';
    }
    
 

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://kit.fontawesome.com/01f338039f.js" crossorigin="anonymous"></script>   
-   <title>Resoft</title>
-   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/01f338039f.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" href="./css/slick.css">
    <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
-   <script src="./WOW-master/dist/wow.min.js"></script>
+   <title>Resoft</title>
 </head>
 
 <body>
    <header>
       <div id="CI_wrapper">
-         <a href="javascript:void(0)"><img src="./img/리소프트로고.png" alt=""></a>
+         <a href="#"><img src="./img/리소프트로고.png" alt=""></a>
       </div>
       <div class="banner_wrapper">
          <div class="banner_text_wrapper">
@@ -33,10 +34,57 @@
          </div>
       </div>
    </header>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+   <!-- slick-slider 부분 -->
+   <div class="news_wrap">
+      <div class="news_content_wrap">
+         <div class="title tit_center">
+            <h2 class="h_tit">프로젝트</h2>
+            <p class="subTitleEng">resoft projects</p>
+         </div>
+         <div class="btn_wrap">
+            <!-- <a href="#" class="more"><span>more</span></a> -->
+         </div>
+      </div>
+   
+      <div class="container_slide">
+         <div class="slick-track">
+
+            <div class="cont">
+               <p class="work-title">대구인문사회대학<br></p>		
+               <img class="logo" src="./img/inmun_logo.png" alt="[WEB]">
+            </div>
+
+            <div class="cont">
+               <p class="work-title">제15회 달서 하프 비대면 마라톤대회<br></p>		
+               <img class="logo" src="./img/달서구청로고.png" alt="[APP]">
+            </div>
+
+            <div class="cont">
+               <p class="work-title">제8회 한성백제 비대면 마라톤대회<br></p>		
+               <img class="logo" src="./img/한성백제마라톤.png" alt="[APP]">
+            </div>
+
+            <div class="cont">
+               <p class="work-title">2020 대구 마스크 쓰GO 코로나 극복 레이스<br></p>		
+               <img class="logo" src="./img/컬러풀대구로고.jpg" alt="[APP]">
+            </div>
+
+            <div class="cont">
+               <p class="work-title">송파구청 송파둘레길 비대면 걷기대회<br></p>		
+               <img class="logo" src="./img/송파둘레길.png" alt="[APP]">
+            </div>
+
+         </div>
+      </div>
+   </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!-- 지그재그부분 -->
    <div id="container">
       <div class="box_wrapper">
          <div class="CI_Big">
-            <img src="./img/리소프트로고_big.png" alt="" class="wow fadeInDown" data-wow-delay="0.3s">
+            <img src="./img/리소프트로고_big.png" alt="">
          </div>
       </div>
       <div class="client_img_wrapper">
@@ -236,11 +284,11 @@
          </div>
       </div>
    </footer>
-   <script>
-      new WOW().init();
-   </script>
-  
-   <script defer src="./js/index.js"></script>
+
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./js/index.js"></script>
+   <script src="./js/slick.js"></script>
 </body>
 
 </html>

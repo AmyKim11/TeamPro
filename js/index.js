@@ -69,6 +69,11 @@ function  clientsImagesClass () {
          }
        
       }
+      
+      if( clientsImg[26]){
+         plusButton.style.display = 'none';
+         console.log(1); 
+      }
    
    }
 
@@ -77,6 +82,10 @@ function  clientsImagesClass () {
             setTimeout(function () {
                clientsImg[i].style.opacity = 1;
             }, i * 200)
+      }
+
+      if( clientsImg[26].style.opacity === 1 ){
+         plusButton.style.display = 'none'; 
       }
      
    }
@@ -95,6 +104,7 @@ function  clientsImagesClass () {
       } else if(window.innerWidth >= 941 && window.innerWidth <= 1218){
          width1217(); 
          startAni = false;
+        
          buttonClickWidth1218(NONE, sNum1[0], sNum1[1]);
          // width940();
       
@@ -111,9 +121,7 @@ function  clientsImagesClass () {
   
   
    clientListAni();
-   if( clientsImg[26].style.opacity === 1 ){
-      plusButton.style.display = 'none';
-   }
+
    
 
    function buttonClickWidth1218(BLOCK, num1, num2) {
@@ -126,6 +134,7 @@ function  clientsImagesClass () {
   
    }
 
+   // 플러스 버튼 눌렀을때 나머지 로고 표시
    const clickButtonEvent = () => {
       buttonClickWidth1218($BLOCK);
       let e =1;
@@ -138,6 +147,7 @@ function  clientsImagesClass () {
       plusButton.classList.add('noshow');
     
    }
+
 
    // console.log(buttonClickWidth1218);
    plusButton.addEventListener("click", clickButtonEvent);

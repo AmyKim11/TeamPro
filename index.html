@@ -10,6 +10,7 @@
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
    <script src="./WOW-master/dist/wow.min.js"></script>
+   <link rel="stylesheet" href="./css/gichan-css.css">
    <link rel="stylesheet" href="./css/card.css">
    <link rel="stylesheet" href="./css/slick.css">
    <link rel="stylesheet" href="./css/seungyeon_style.css">
@@ -380,11 +381,12 @@
    <!---------------------- 지도 부분 --------------------------->
    <div class="map-wrap">
       <!-- 구현부분 -->
-      <div id="map"></div>
+      <div  data-wow-delay="0.5s" id="map" class="wow fadeIn"></div>
       
-      
-      
-      <div class="info">
+      <!-- 카카오 js부분 구현부분 밑에 작성해야함 -->
+      <script src="/js/map.js"></script>
+
+      <div  data-wow-delay="0.5s" class="info wow fadeInRight">
           <div>
               <p>TEL</p>
               <p>(053)475-2110</p>
@@ -408,6 +410,7 @@
           </div>
       </div>
   </div>
+
    <!-- ---------footer 부분 ------------->
    <footer>
       <div class="footer_wrapper">
@@ -436,7 +439,12 @@
          </div>
       </div>
    </footer>
-
+      <div id="wrap">    
+      <a id="top_btn" class=""><img src="../img/expand_less_FILL0_wght400_GRAD0_opsz48.png" width="60px" height="60px" >    
+         <p>TOP</p>
+      </a>
+      </div>
+      </div>
    <script>
       new WOW().init();
    </script>
@@ -445,6 +453,7 @@
    <script src="./js/slick.js"></script>
    <!-- 카카오 js부분 구현부분 밑에 작성해야함 -->
    <script src="./js/map.js"></script>
+   <script src="./js/gichan-js.js"></script>
 </body>
 
 </html>

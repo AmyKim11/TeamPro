@@ -6,24 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/map.css">
-
-    <!-- wow js css,js -->
-    <link rel="stylesheet" href="/css/animate.css">
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/wow.js"></script>
-
     <!-- 카카오맵 api 다운 스크립트 -->
-	<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4b8ac5f2e5204d17b391881370e8eb0f"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4b8ac5f2e5204d17b391881370e8eb0f"></script>
 </head>
 <body>
     <div class="map-wrap">
         <!-- 구현부분 -->
-        <div  data-wow-delay="0.5s" id="map" class="wow fadeIn"></div>
+        <div id="map"></div>
         
         <!-- 카카오 js부분 구현부분 밑에 작성해야함 -->
-        <script src="/js/map.js"></script>
-
-        <div  data-wow-delay="0.5s" class="info wow fadeInRight">
+        <script src="/js/kakaomap.js"></script>
+        
+        <div class="info">
             <div>
                 <p>TEL</p>
                 <p>(053)475-2110</p>

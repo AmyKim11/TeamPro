@@ -7,7 +7,7 @@ a {
     color: #000;
 }
 
-p {
+.flip p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -169,3 +169,6 @@ br {
     opacity: 0;
 }
 
+@media  (max-width:940px) {
+    
+}

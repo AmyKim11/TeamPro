@@ -224,6 +224,71 @@ header{
    /* display: none; */
 }
 
+/* ------------footer 부분------------ */
+footer{
+   width: 100%;
+   clear: both;
+   position: relative;
+   background: #04088a;
+}
+.footer_wrapper{
+   background: url('../img/footer2.png') no-repeat;
+   display: flex;
+   padding: 80px 50px;
+   width: 100%;
+   margin: 0 auto;
+   background-size: cover;
+}
+
+.img_wrapper{
+   margin-left: 250px;
+}
+
+.footer_contents{
+   margin-left: 5%;
+   width: 85%;
+   display: inline-block;
+   word-break:keep-all;
+}
+
+.footer_con_title{
+   color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.footer_info_wrapper{
+   color: #b9b9b9;
+   line-height: 25px;
+}
+
+.footer_info{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer_info p{
+   margin: 0 !important;
+   width: calc(100% / 2);
+   display: block;
+}
+
+.footer_info p:nth-of-type(5){width: 100%;}
+
+pre{
+   display: block;
+}
+
+.copyright{
+   color: #828282;
+}
+
+
+.noshow{
+   display: none;
+}
+
+
 /* 중간화면 ~ 큰화면일때 */
 @media  (min-width:941px) and (max-width:1217px) {
    #CI_wrapper{
@@ -383,6 +448,7 @@ header{
    }
 
    .footer_info{
+      font-size: 14px;
       flex-direction: column;
    }
 
@@ -390,9 +456,6 @@ header{
       font-size: 16px;
    }
 
-   .footer_info p{
-      font-size: 14px;
-   }
 }
 
 
@@ -414,6 +477,7 @@ header{
    /* footer 부분 */
    .footer_wrapper{
       padding: 40px;
+      display: block;
       flex-direction: column;
    }
 
@@ -423,16 +487,29 @@ header{
    }
 
    .footer_wrapper .img_wrapper img{
-      width: 40%;
+      width: 30%;
+      height: auto;
       float: none;
    }
 
    .footer_contents .footer_con_title{
       font-size: 16px;
+      line-height: 16px;
+   }
+
+
+   .footer_info{
+      font-size: 14px;
+      flex-direction: column;
    }
 
    .footer_info p{
-      font-size: 14px;
+      width: 100%;
+      line-height: 17px;
+   }
+   .copyright{
+      font-size: 16px;
+      line-height: 16px;
    }
 }
 
@@ -470,59 +547,3 @@ header{
    }
 }
 
-/* ------------footer 부분------------ */
-.footer_wrapper{
-   background: url('../img/footer2.png') no-repeat;
-   display: flex;
-   padding: 80px 50px;
-   width: 100%;
-   margin: 0 auto;
-   background-size: cover;
-}
-
-.img_wrapper{
-   margin-left: 250px;
-}
-
-.footer_contents{
-   margin-left: 5%;
-   width: 85%;
-   display: inline-block;
-}
-
-.footer_con_title{
-   color: white;
-    font-size: 19px;
-    margin-bottom: 10px;
-}
-
-.footer_info_wrapper{
-   color: #b9b9b9;
-   line-height: 25px;
-}
-
-.footer_info{
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.footer_info p{
-   margin: 0 !important;
-   width: calc(100% / 2);
-   display: block;
-}
-
-.footer_info p:nth-of-type(5){width: 100%;}
-
-pre{
-   display: block;
-}
-
-.copyright{
-   color: #828282;
-}
-
-
-.noshow{
-   display: none;
-}

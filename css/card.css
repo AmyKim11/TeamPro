@@ -38,7 +38,7 @@
 
 .b_wrap .busi_content_wrap {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 200px auto;
 }
 
 .back.flip-item {
@@ -183,7 +183,7 @@
 @media screen and (min-width: 1217px) and (max-width: 1720px) {
     .b_wrap{
     max-width: 1550px;
-    margin: 200px auto;
+    margin:0 auto;
     }
 }
 
@@ -198,6 +198,9 @@
         width: calc(100% / 2 - 4%);
         margin : 2%;
         height: 300px;
+    }
+    .b_wrap .busi_content_wrap{
+        margin: 0;
     }
 }
 

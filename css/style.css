@@ -66,27 +66,87 @@ header{
    width: 100%;
 } */
 
-/* -------------------------------------------- */
 /* -------슬라이더---------- */
-h2{
+.h_tit{
    font-size: 18px;
    color: #272626;
    font-weight: 600;
    padding: 20px 0px;
 }
-.news_wrap{width: 100%; padding: 80px 0; background-color: #f8f8f8;}
-.news_wrap .news_content_wrap{max-width: 1400px; margin: 0 auto; overflow: hidden;}
-.tit_center {text-align: center; float: none;}
-.title .h_tit {font-size: 42px; font-weight: 600; color: navy;}
-.subTitleEng {text-transform: uppercase; text-align: center; color: #ee72d8; font-weight: 600; font-size: 15px; letter-spacing: 3px;}
+.news_wrap{
+   width: 100%;
+   padding: 80px 0;
+   background-color: #f8f8f8;
+}
+.news_wrap .news_content_wrap{
+   max-width: 1400px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.tit_center {
+   text-align: center;
+   float: none;
+}
+.title .h_tit {
+   font-size: 42px;
+   font-weight: 600;
+   color: navy;
+}
+.subTitleEng {
+   text-transform: uppercase;
+   text-align: center;
+   color: #ee72d8;
+   font-weight: 600;
+   font-size: 15px;
+   letter-spacing: 3px;
+}
 
-/* slick slider */
 .container_slide{
    max-width: 1400px;
    margin: 55px auto;
-   /* clear: both; */
 }
-/* -------------------------------------------- */
+
+.wrap{
+   width: 1440px;
+   height: 400px;
+   margin: 0 auto;
+}
+
+.cont{
+   width: 330px;
+   height: 300px;
+   display: inline-block;
+   background-color: #fff;
+   margin: 0 10px;
+}
+
+.logo{
+   margin: 0 auto;
+   width: 80%;
+   height: 40%;
+   transition: all 0.2s linear;
+}
+
+.logo:hover {
+   transform: scale(1.2);
+   box-shadow: 0;
+}
+
+.work-title {
+   height: 30%;
+   color: #222;
+   margin-top: 1.5rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.work_title_font{
+   font-weight: 600;
+   letter-spacing: -0.4px;
+   line-height: 1.5;
+   font-size: 20px;
+   word-break: keep-all;
+}
 
 
 /* -------기업소개(큰로고)--------- */

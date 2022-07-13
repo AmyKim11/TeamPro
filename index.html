@@ -10,7 +10,6 @@
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="./WOW-master/css/libs/animate.css">
    <script src="./WOW-master/dist/wow.min.js"></script>
-   <link rel="stylesheet" href="./css/gichan-css.css">
    <link rel="stylesheet" href="./css/card.css">
    <link rel="stylesheet" href="./css/slick.css">
    <link rel="stylesheet" href="./css/seungyeon_style.css">
@@ -27,7 +26,7 @@
          <a href="#"><img src="./img/리소프트로고.png" alt=""></a>
       </div>
       <div class="banner_wrapper">
-         <div class="banner_text_wrapper wow fadeInLeft" data-wow-delay="0.3s">
+         <div class="banner_text_wrapper">
             <p class="banner_text_title">Evolution<br>
                With New Software</p>
             <p class="banner_text_con">
@@ -38,7 +37,7 @@
             </p>
          </div>
          <div class="banner_img_wrapper">
-            <img src="./img/메인뇌.png" class="wow fadeInRight" data-wow-delay="0.5s"alt="">
+            <img src="./img/메인뇌.png" alt="">
          </div>
       </div>
    </header>
@@ -381,9 +380,11 @@
    <!---------------------- 지도 부분 --------------------------->
    <div class="map-wrap">
       <!-- 구현부분 -->
-      <div  data-wow-delay="0.5s" id="map" class="wow fadeIn"></div>
-
-      <div  data-wow-delay="0.5s" class="info wow fadeInRight">
+      <div id="map"></div>
+      
+      
+      
+      <div class="info">
           <div>
               <p>TEL</p>
               <p>(053)475-2110</p>
@@ -407,7 +408,6 @@
           </div>
       </div>
   </div>
-
    <!-- ---------footer 부분 ------------->
    <footer>
       <div class="footer_wrapper">
@@ -436,13 +436,7 @@
          </div>
       </div>
    </footer>
-   <!-- ----------Top Button 부분---------------- -->
-      <div id="wrap">    
-      <a id="top_btn" class=""><img src="./img/expand_less_FILL0_wght400_GRAD0_opsz48.png" width="60px" height="60px" >    <!--0711 이미지 경로 수정-->
-         <p>TOP</p>
-      </a>
-      </div>
-      </div>
+
    <script>
       new WOW().init();
    </script>
@@ -451,7 +445,6 @@
    <script src="./js/slick.js"></script>
    <!-- 카카오 js부분 구현부분 밑에 작성해야함 -->
    <script src="./js/map.js"></script>
-   <script src="./js/gichan-js.js"></script>
 </body>
 
 </html>

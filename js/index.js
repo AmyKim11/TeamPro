@@ -1,6 +1,5 @@
 let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 let clientsImg = document.querySelectorAll(".client_CI");
-let clientImgWrap = document.querySelector("ul");
 let plusButton = document.querySelector(".button");
 
 let clientArray = [];
@@ -161,10 +160,10 @@ let scrollEvent = function () {
    const scrollY = window.scrollY;
    const innerHeight = window.innerHeight;
    const scroll = (innerHeight * 0.9) + scrollY;
-   console.log(scroll);
+   // console.log(scroll);
    // Array.prototype.forEach.call(clientsImg, function(li) 
-   console.log(clientsImg[0].offsetTop < scroll);
-   console.log(clientsImg[0].offsetTop);
+   // console.log(clientsImg[0].offsetTop < scroll);
+   // console.log(clientsImg[0].offsetTop);
    // 객체 위치와 높이 비교 : 화면에 표출되는 높이인지 체크
    if (clientsImg[0].offsetTop < scroll) {
 

@@ -314,9 +314,6 @@ pre{
       width: 50%;
    }
 
-   .client_img_wrapper{
-      position: relative;
-   }
 
    .client_img_wrapper ul{
       margin: 0 5%;
@@ -334,11 +331,6 @@ pre{
    .banner_text_wrapper p:last-child span:nth-child(2),
    .banner_text_wrapper p:last-child span:last-child span:last-child {display: block;}
    
-   .button{
-      position: absolute;
-      left: 47%;
-      bottom: 20%;
-   }
    .button i{
       font-size: 70px;
       display: initial;
@@ -410,9 +402,7 @@ pre{
       margin: 100px 0;
    }
 
-   .client_img_wrapper{
-      position: relative;
-   }
+
    .client_img_wrapper ul{
       max-width: 500px;
       margin: 0 auto;
@@ -427,14 +417,10 @@ pre{
       width: 110px;
       height: 110px;
    }
-   .button{
-      position: absolute;
-      left: 45%;
-      bottom: 50%;
-   }
+ 
    .button i{
       font-size: 70px;
-      /* display: initial; */
+      display: initial;
    }
 
    /* footer */
